@@ -14,6 +14,8 @@
 ---
 include:
   - board: sparkfun_pro_micro_rp2040
+    shield: osprette
   - board: boardsource_blok
     shield: osprette
-      
+  - board: nice_nano
+    shield: osprette
