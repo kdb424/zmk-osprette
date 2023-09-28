@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
@@ -150,8 +151,8 @@
             bindings = <
                                   &trans     &trans     &trans     &trans        &trans     &trans     &trans     &trans
             &trans     &kp N1     &kp N2     &kp N3     &kp N4     &trans        &trans     &trans     &trans     &trans     &trans     &trans
-                       &kp N5     &kp N6     &kp N7     &kp N8     &bootloader   &trans     &trans     &trans     &trans     &trans
-                                                        &trans     &trans        &trans     &trans
+                       &kp N5     &kp N6     &kp N7     &kp N8     &bootloader   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR &kp QMARK
+                                                        &trans     &trans        &trans     &out OUT_TOG
             >;
         };
 
